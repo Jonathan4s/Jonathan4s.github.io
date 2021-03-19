@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Jonathan4s.github.io</id>
     <title>Jonathan</title>
-    <updated>2021-03-19T08:09:54.735Z</updated>
+    <updated>2021-03-19T08:11:19.308Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Jonathan4s.github.io"/>
     <link rel="self" href="https://Jonathan4s.github.io/atom.xml"/>
@@ -16,10 +16,19 @@
         <link href="https://Jonathan4s.github.io/post/hello-jonathan4s/">
         </link>
         <updated>2021-03-19T07:26:29.000Z</updated>
-        <content type="html"><![CDATA[<ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8986136"><label class="task-list-item-label" for="task-item-8986136"> PMP计算题总结，分单元画思维导图</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3257719"><label class="task-list-item-label" for="task-item-3257719"> 个人网站</label></li>
-</ul>
+        <content type="html"><![CDATA[<h2 id="价格预测的思考"><strong>价格预测的</strong>思考：</h2>
+<h3 id="一-管理要求优化招标采购管理-提升整体流程效率">一、管理要求：优化招标采购管理, 提升整体流程效率</h3>
+<pre><code>   一是通过价格模型, 为概预算人员提供了可靠的数据支撑, 在工作过程中, 有效减少了概预算编制人员查询参考资料、评估物资价格的工作量, 提升工作效率。有效避免预算不足或项目资金闲置浪费等情况的发生。
+
+  二是在采购物资过程中, 可以通过预测参考价格有效对比市场中的相关物资优劣情况, 为物资采购提供更加可靠、丰富和多样化的供应商, 提高采购过程质量;同时在采购工作组织和招标指标设定过程中, 可以有效疏解关于价格水平的评估, 更好地集中精力在技术和商务方面的评估, 提高了流程效率和整体采购质量。
+
+  三是对于特定物资、市场相关供应商较少和通过单一来源采购的物资, 可以参照相近物资或相关物资的价格预测数据, 获取合理的价格区间, 制定有效的指导价格进行采购, 避免由于卖方垄断造成的价格畸高, 杜绝资源的浪费。
+</code></pre>
+<p>引文献《大数据背景下物资价格预测方法》</p>
+<hr>
+<h3 id="二-技术实现的探索">二、技术实现的探索：</h3>
+<p>通过分析物资价格相关的影响因子, 并基于这些物资相关大数据, 探索时序预测的方法、简单回归分析模型及复杂的分类回归模型等机器学习算法对电力物资价格的预测, 并对模型的预测效果进行评估。结果表明, 时序分析的方法效果差强人意, 而将时序转换为回归问题, 进而使用梯度提升树可以得到较理想的结果</p>
+<p><strong>复杂的分类回归模型</strong>, 能够很大程度地提高预测精度, 如<a href="https://www.notion.so/XGBOOST-cfbccb052b594dec99de717d1c9c0f08">梯度提升树 (XGBOOST)</a> 、<a href="https://www.notion.so/XGBOOST-cfbccb052b594dec99de717d1c9c0f08">随机森林</a>、<a href="https://www.notion.so/SVM-8a07d3c07fdd48af8249a9a8ba49c15a">深度神经网络, 支持向量机 (SVM)</a> 等, 这些模型可以更好的归纳概括复杂数据的分布。</p>
 ]]></content>
     </entry>
     <entry>
