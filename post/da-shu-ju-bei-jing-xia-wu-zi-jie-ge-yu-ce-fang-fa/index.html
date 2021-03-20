@@ -1,0 +1,225 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>大数据背景下物资价格预测方法 | Jonathan</title>
+<link rel="shortcut icon" href="https://Jonathan4s.github.io/favicon.ico?v=1616223635391">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://Jonathan4s.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="大数据背景下物资价格预测方法 | Jonathan - Atom Feed" href="https://Jonathan4s.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="一、当前业务问题：
+ 一是业务单位提报的需求物资的概预算金额, 主要基于项目设计单位**造价人员的经验判断**, **缺乏系统的数据理论支撑**, 且并**未考虑**设计到采购实施时间段内的**价格变动情况**。对概算准确性提升具有重要的指..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://Jonathan4s.github.io">
+  <img class="avatar" src="https://Jonathan4s.github.io/images/avatar.png?v=1616223635391" alt="">
+  </a>
+  <h1 class="site-title">
+    Jonathan
+  </h1>
+  <p class="site-description">
+    HTML
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              大数据背景下物资价格预测方法
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-03-20
+              </span>
+              <span>
+                6 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h3 id="一-当前业务问题">一、当前业务问题：</h3>
+<pre><code> 一是业务单位提报的需求物资的概预算金额, 主要基于项目设计单位**造价人员的经验判断**, **缺乏系统的数据理论支撑**, 且并**未考虑**设计到采购实施时间段内的**价格变动情况**。对概算准确性提升具有重要的指导意义。
+
+ 在实际的采购过程中, 往往会碰到这样的问题:存在部分物资在经历了一个**较长的招标过程**后, **中标价格会较设计之初估算的设计价格概算高**。为保证采购的顺利实施，大数据调研和算法模型构建预期成效不得不临时调整概算, 给工作的及时开展造成影响。
+
+ 目前的设备招标采购评价指标普遍侧**重**采购价格, **轻**后期运行和维护费用, 出现“冰山效应”, **大大增加了企业的后期成本**。在这种评标体制下, 价格低、质量差、易老化的设备易于中标, 甚至“明知不好而购之”现象时有发生。那些价格偏高, 但质量、性能较好的设备往往被排除在外。对改进**评标指标体系**提供参照数据。从评标的指标来看, 有定性指标, 也有定量指标。
+
+ 二是物资采购部门实施采购时, 参照的物资估算价格并不准确, 在实际业务过程中, 并没有发挥相应的作用。
+</code></pre>
+<h3 id="二-价格预测的意义">二、价格预测的意义：</h3>
+<pre><code> 通过建立**物资价格预测模型**, 可以将一个相对公正的**基准价格**作为评标时的价格参照, 降低评标时商务标的影响力, 让评标专家更关注于设备物资的质量, 进一步提高中标设备的性价比。
+</code></pre>
+<h3 id="三-预测方法">三、预测方法：</h3>
+<pre><code> 结合**各电压等级投资情况**, 以及**变电容量**、**出现路数**、**线路长度**、**塔形**、**设备价格**、**地区差异**及**历年工程建设物资使用情况**, 建立物资价格预测模型, 用于物资需求价格进行预测和分析。
+
+ **第一步将物资进行分类：**
+
+ 电网企业在采购过程中的重点物资主要包括变电物资 (变压器、互感器等) 和输电物资 (线缆、铁塔、杆塔等) , 此次选用参照价值较大的变压器进行研究。
+</code></pre>
+<p><strong>第二步搭建合适的物资价格模型：</strong></p>
+<pre><code> 线性回归首先通过分析与变压器价格相关的要素及其相关关系, 建立线性回归方程;然后, 评定各个自变量对因变量影响相对重要性以及测定最优线性回归方程的偏离度;
+
+ 时间序列模型考虑到价格和时间的相关性, 选取随机时间序列模型中的ARMA模型开展物资价格预测。
+</code></pre>
+<p><strong>第三步校验价格预测结果：</strong></p>
+<pre><code>通过实例验证有关回归分析的结果,并将有关内容加入到线性回归方程之中进行计算, 进一步检验有关模型统计的有效性。
+
+ 通过选取2015～2018年部分数据进行验证发现, 两模型均验证有效, 其中线性回归预测的物资价格相对波动较小, 与真实值比较接近, 残差率在3%以内, 预测准确度非常高, 可以很好的用于价格预测;而通过时间序列预测的物资价格相对波动较大, 但预测价格与真实价格走势一致, 可以在较短时间内反映物资的价格变动情况。
+</code></pre>
+<p><strong>第四步结论与方法并用户指导说明书</strong></p>
+<pre><code> 综上所述, 在后续工作应用与实践过程中, 可以通过期货市场铜和铝的价格, 结合废旧物资的价格以及市场变动趋势情况, 以线性回归预测为主, 参考时间序列模型预测的价格变动趋势情况, 合理安排采购价格与时间, 最大限度的降低采购成本, 提高采购效率。
+</code></pre>
+<p><strong>最后上线预期与总结：</strong></p>
+<pre><code>  在现行物资采购模式下, 可以通过信息系统来掌握物资采购在各个环节的实时变动及历史变动情况, 但对于未来预期的计划执行和成本控制方面, 存在很多不足, 这些不足恰好可以通过本文价格预测模型予以弥补和完善。
+
+  指导采购安排, 降低采购成本。在构建模型的过程中, 分析最近三年 (2015年1月至2018年1月) 变压器(型号为:10千伏变压器, 200千伏安, 普通, 硅钢片, 油浸) 采购数量的趋势变动和价格变动情况得出, 通过合理安排采购时间, 让**采购时点在较低的价格水平上发生**, 是合理可行的。在实际业务发生过程中, 价格波动非常强烈, 且同种物资价格差距较大, 在降低成本完善价格机制方面有很大的空间。
+
+ 同时, 通过数据计算, 自2015年1月到2018年1月, 通过模拟较低价格采购与正常发生的采购金额对比, 可以降低采购成本约6825万元, 占总额的8%左右。具体模拟较低价格水平与实际发生价格水平的对比如图1所示。
+</code></pre>
+<h3 id="思考">思考：</h3>
+<p>优化招标采购管理, 提升整体流程效率。</p>
+<pre><code>   一是通过价格模型, 为概预算人员提供了可靠的数据支撑, 在工作过程中, 有效减少了概预算编制人员查询参考资料、评估物资价格的工作量, 提升工作效率。有效避免预算不足或项目资金闲置浪费等情况的发生。
+
+  二是在采购物资过程中, 可以通过预测参考价格有效对比市场中的相关物资优劣情况, 为物资采购提供更加可靠、丰富和多样化的供应商, 提高采购过程质量;同时在采购工作组织和招标指标设定过程中, 可以有效疏解关于价格水平的评估, 更好地集中精力在技术和商务方面的评估, 提高了流程效率和整体采购质量。
+
+  三是对于特定物资、市场相关供应商较少和通过单一来源采购的物资, 可以参照相近物资或相关物资的价格预测数据, 获取合理的价格区间, 制定有效的指导价格进行采购, 避免由于卖方垄断造成的价格畸高, 杜绝资源的浪费。</code></pre>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E4%B8%80-%E5%BD%93%E5%89%8D%E4%B8%9A%E5%8A%A1%E9%97%AE%E9%A2%98">一、当前业务问题：</a></li>
+<li><a href="#%E4%BA%8C-%E4%BB%B7%E6%A0%BC%E9%A2%84%E6%B5%8B%E7%9A%84%E6%84%8F%E4%B9%89">二、价格预测的意义：</a></li>
+<li><a href="#%E4%B8%89-%E9%A2%84%E6%B5%8B%E6%96%B9%E6%B3%95">三、预测方法：</a></li>
+<li><a href="#%E6%80%9D%E8%80%83">思考：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://Jonathan4s.github.io/post/hello-jonathan4s/">
+              <h3 class="post-title">
+                Hello Jonathan4s
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://Jonathan4s.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
