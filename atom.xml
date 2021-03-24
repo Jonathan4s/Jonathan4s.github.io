@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Jonathan4s.github.io</id>
-    <title>Jonathan</title>
-    <updated>2021-03-24T02:41:04.278Z</updated>
+    <title>GreenOlive</title>
+    <updated>2021-03-24T02:46:02.538Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Jonathan4s.github.io"/>
     <link rel="self" href="https://Jonathan4s.github.io/atom.xml"/>
-    <subtitle>GreenOlive</subtitle>
+    <subtitle>过去的知识储备只能解决现在的问题，只有不断学习才能改变未来的问题。&lt;br&gt;
+The stock of knowledge in the past can only solve the problems of the present，only continuous learning can change the problems of the future.</subtitle>
     <logo>https://Jonathan4s.github.io/images/avatar.png</logo>
     <icon>https://Jonathan4s.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Jonathan</rights>
+    <rights>All rights reserved 2021, GreenOlive</rights>
     <entry>
         <title type="html"><![CDATA[大数据背景下物资价格预测方法]]></title>
         <id>https://Jonathan4s.github.io/post/da-shu-ju-bei-jing-xia-wu-zi-jie-ge-yu-ce-fang-fa/</id>
