@@ -1,101 +1,60 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" >
+<html lang="zh-CN">
+	<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimal-ui" />
+    <title>大数据背景下物资价格预测方法 | Jonathan</title>
+<link rel='stylesheet' id='puma-css'  href='https://Jonathan4s.github.io/styles/main.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='puma-css'  href='https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css' media='screen' />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<script type='text/javascript' src='https://Jonathan4s.github.io/media/scripts/jquery.js'></script>
+<script type='text/javascript' src='https://Jonathan4s.github.io/media/scripts/jquery-migrate.min.js'></script>
+        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+         <script >hljs.initHighlightingOnLoad();</script>
+         
+</head>
+<body class="single single-post postid-3788 single-format-standard">
+	<!--加入跟随滑动的顶部-->
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title">
+				<a href="https://Jonathan4s.github.io" title="Jonathan">Jonathan</a>
+			</h1>
+		</div>
 
-<title>大数据背景下物资价格预测方法 | Jonathan</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://Jonathan4s.github.io/favicon.ico?v=1616551155193">
-<link rel="stylesheet" href="https://Jonathan4s.github.io/styles/main.css">
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-
-    <meta name="description" content="一、当前业务问题：
- 一是业务单位提报的需求物资的概预算金额, 主要基于项目设计单位**造价人员的经验判断**, **缺乏系统的数据理论支撑**, 且并**未考虑**设计到采购实施时间段内的**价格变动情况**。对概算准确性提升具有重要的指..." />
-    <meta name="keywords" content="" />
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://Jonathan4s.github.io">
-        <img src="https://Jonathan4s.github.io/images/avatar.png?v=1616551155193" class="site-logo">
-        <h1 class="site-title">Jonathan</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      GreenOlive
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Jonathan4s.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">大数据背景下物资价格预测方法</h2>
-            <div class="post-date">2021-03-20</div>
-            
-            <div class="post-content" v-pre>
-              <h3 id="一-当前业务问题">一、当前业务问题：</h3>
+		<a class="primary-nav-trigger" href="javascript:void(0)">
+			<span class="menu-icon"></span>
+		</a>
+		
+	</header>
+		<div class="site-navigation-wrapper">
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<ul class="primary-nav">
+                    
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="首页" href="/">首页</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="归档" href="/archives">归档</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="标签" href="/tags">标签</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="关于" href="/post/about">关于</a></li>
+                
+	
+			</ul>
+		</nav>			
+	</div>
+	<!--跟随滑动的顶部结束-->
+	<div class="surface-content">    <main class="main-content">
+        <section class="section-body">
+                            <header class="section-header u-textAlignCenter">
+                    <h2 class="grap--h2">大数据背景下物资价格预测方法</h2>
+                    <div class="block-postMetaWrap">
+                        <time>2021-03-20</time>
+                    </div>
+                </header>
+                <div class="grap">
+					
+					<h3 id="一-当前业务问题">一、当前业务问题：</h3>
 <pre><code> 一是业务单位提报的需求物资的概预算金额, 主要基于项目设计单位**造价人员的经验判断**, **缺乏系统的数据理论支撑**, 且并**未考虑**设计到采购实施时间段内的**价格变动情况**。对概算准确性提升具有重要的指导意义。
 
  在实际的采购过程中, 往往会碰到这样的问题:存在部分物资在经历了一个**较长的招标过程**后, **中标价格会较设计之初估算的设计价格概算高**。为保证采购的顺利实施，大数据调研和算法模型构建预期成效不得不临时调整概算, 给工作的及时开展造成影响。
@@ -142,36 +101,56 @@
 
   三是对于特定物资、市场相关供应商较少和通过单一来源采购的物资, 可以参照相近物资或相关物资的价格预测数据, 获取合理的价格区间, 制定有效的指导价格进行采购, 避免由于卖方垄断造成的价格畸高, 杜绝资源的浪费。</code></pre>
 
-            </div>
-            
-            
+                </div>
 
-            
+                <div class="post--keywords" itemprop="keywords">
+					          </div>
 
-          </div>
 
+
+                      </section>
+    </main>
+</div>
+	<footer class="site-footer u-textAlignCenter">
+    	<div class="footer-branding">
+            <a href="https://Jonathan4s.github.io" title="Jonathan">Jonathan</a>
+									
+			         </div>
+		 <hr />
+		 <div class="social-links">
+		                       
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+				</div>
+        <div class="footer-copy">
+                Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
         </div>
-      </div>
-    </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+    </footer>
+	<div class="back-to-top u-hide" onclick="backToTop();"><i class="iconfont icon-xiangshang"></i></div>
 
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
-
-
-
-  </body>
+<script type='text/javascript' src='https://Jonathan4s.github.io/media/scripts/main.js'></script>
+</body>
 </html>
