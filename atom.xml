@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Jonathan4s.github.io</id>
     <title>GreenOlive</title>
-    <updated>2021-03-29T13:16:13.931Z</updated>
+    <updated>2021-03-29T13:20:36.871Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Jonathan4s.github.io"/>
     <link rel="self" href="https://Jonathan4s.github.io/atom.xml"/>
@@ -11,6 +11,15 @@ The stock of knowledge in the past can only solve the problems of the present，
     <logo>https://Jonathan4s.github.io/images/avatar.png</logo>
     <icon>https://Jonathan4s.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, GreenOlive</rights>
+    <entry>
+        <title type="html"><![CDATA[张芳我爱你]]></title>
+        <id>https://Jonathan4s.github.io/post/zhang-fang-wo-ai-ni/</id>
+        <link href="https://Jonathan4s.github.io/post/zhang-fang-wo-ai-ni/">
+        </link>
+        <updated>2021-03-29T13:20:17.000Z</updated>
+        <content type="html"><![CDATA[<p>老婆最好</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[222]]></title>
         <id>https://Jonathan4s.github.io/post/222/</id>
