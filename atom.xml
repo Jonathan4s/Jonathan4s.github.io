@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Jonathan4s.github.io</id>
     <title>GreenOlive</title>
-    <updated>2021-04-02T06:46:22.453Z</updated>
+    <updated>2021-04-02T07:42:50.390Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Jonathan4s.github.io"/>
     <link rel="self" href="https://Jonathan4s.github.io/atom.xml"/>
@@ -12,7 +12,105 @@ The stock of knowledge in the past can only solve the problems of the present，
     <icon>https://Jonathan4s.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, GreenOlive</rights>
     <entry>
-        <title type="html"><![CDATA[利用SAP®Analytics Cloud引入财务规划和分析]]></title>
+        <title type="html"><![CDATA[5.利用SAP®Analytics Cloud引入财务规划和分析-基于驾驶员的规划]]></title>
+        <id>https://Jonathan4s.github.io/post/4-ji-yu-jia-shi-yuan-de-gui-hua/</id>
+        <link href="https://Jonathan4s.github.io/post/4-ji-yu-jia-shi-yuan-de-gui-hua/">
+        </link>
+        <updated>2021-04-02T07:17:39.000Z</updated>
+        <content type="html"><![CDATA[<p>在试图为计划制定基线时，依赖模式、季节性和历史数据是有用的，但这往往会让财务经理和决策者无法清楚地了解到底是什么推动了他们公司的财务健康。</p>
+<p>基于驱动因素的计划旨在关注直接影响业务绩效的活动，并考虑可控因素。这种方法通常有助于根本原因和因果分析。由于在建立预测时应考虑的所有子组成部分都是逐项列出的，因此可以在每个预测周期中对它们进行调整和重新计算（例如，每小时工资和费率、单位数量、单位价格或费率百分比、成本构成、平方英尺、参与度测量等）。</p>
+<p>可以对基于驱动程序的规划进行建模，以实现模拟，如假设情景。这使得管理者能够在做出决策之前，对决策及其潜在影响进行原型化。这种类型的建模通常可以发现隐藏的风险和附带影响，而这些风险和影响可能很复杂，不需要进行详细的分析。因此，管理者可以通过采用基于驱动因素的方法轻松管理风险，减少预测时的不确定性，从而有可能使他们的组织避免犯代价高昂的错误。</p>
+<p>但建立这些预测模型的最大挑战是选择正确的驱动因素。每一项关键活动都需要分析其与其他因素的关系。SAP Analytics Cloud等解决方案可以通过分析大量数据并以简单易懂的方式将这些数据呈现给决策者，从而帮助企业了解相关性。精心设计的故事可以揭示公司数据集中意外的关系和关联，从而识别潜在的驱动因素。由于企业以前通常将数据保存在Excel或不同的异构系统中，因此以有用的方式收集、协调和分析信息可能是一个挑战。另一个障碍是切断数据可能带来的“噪音”，即大量信息往往会被不测事件和一次性事件压倒性地“污染”。因此，识别和理解基于驱动因素的规划应该考虑哪些业务驱动因素和关键指标通常是困难的。</p>
+<p>SAP Analytics Cloud为基于驱动程序的规划做出贡献的另一种方式是，它的现代ETL技术（如来自多个数据源的数据混合）有助于生成用于分析的统一数据集、传统方差分析和高级统计过程（如执行线性回归）。所有这些都有助于财务团队在财务信息的嘈杂声中导航。</p>
+<p>在本节中，我们将探讨在SAP Analytics Cloud中构建基于驱动程序的模型的常见技术和主要实践。在第4.1节中，我们将讨论为基于驱动程序的车型选择正确驱动程序（财务或非财务）时的一些主要考虑因素。在第4.2节中，我们将通过使用价值驱动因素树（VDT）讨论实时分析的重要性，探讨数据操作在跨模型移动数据中的作用，并考虑真正显示模型中驱动因素影响的高级计算。最后，在第4.3节中，我们将讨论为什么假设情景非常重要，并了解SAP Analytics Cloud如何通过实时模拟的强大功能促进决策过程。</p>
+<p>我们将详细介绍一些关键数据，这些数据允许金融用户通过反向公式等功能与模型交互，以自动执行计算并简化计划周期中的调整过程。</p>
+<p>让我们从制定基本问题开始，为基于驱动程序的规划模型选择合适的驱动程序，充分利用SAP Analytics Cloud成功地设计、测试和部署基于驱动程序的模型。</p>
+<h2 id="41基于驾驶员的车型">4.1基于驾驶员的车型</h2>
+<p>每家公司都希望实现年初制定的财政或日历年目标，并与其战略目标保持一致。如果你的公司有可能达不到这些目标，那么你的财务团队就需要做出决定并采取行动来纠正这个轨迹。这是一个很好的例子，说明了为什么公司经常（通常是每月或每季度）进行预测，以及为什么他们同时衡量年初至今（YTD）和未来一年（YTG）的数据。</p>
+<p>在开始设计之前，您需要了解为什么需要基于驱动程序的模型，甚至需要了解您脱离传统预测流程的动机。企业过去常常依赖部门编号或指导方针来启动规划过程。当企业必须快速评估场景时，基于驱动因素的规划非常有用，因为它允许单个贡献者实时查看驱动因素调整的影响。这使得公司能够更好地提出正确的问题，以理解为什么需要预测，某些相关性如何影响他们的财务状况，以及他们应该预测的频率。</p>
+<p>在下一节中，我们将讨论驱动程序选择过程。我们将遍历将数据输入模型并选择最适用的特性的过程。最后，我们将介绍一些技巧，允许用户在SAP analytics Cloud中测试和验证他们的假设和模型设计考虑。</p>
+<h3 id="为规划模型选择合适的驱动因素">为规划模型选择合适的驱动因素</h3>
+<p>由于公司创造或衡量价值的方式各不相同，基于驱动因素的规划同样取决于组织的行业或战略重点和目标。</p>
+<p>为了了解如何为预测模型选择正确的驱动因素，我们需要寻找在受到内部或外部因素影响时，影响公司创收或增加/减少费用能力的财务和非财务指标。在大多数情况下，这与预算周期没有太大区别；事实上，这些驱动因素通常与预测过程共享。驱动因素可能是可以衡量的因素，例如：</p>
+<ul>
+<li>与产品需求相关的生产/消费率</li>
+<li>固定成本，如工资</li>
+<li>产品售价</li>
+<li>运营费用平均成本</li>
+<li>无形资产，如品牌溢价和人为需求</li>
+</ul>
+<p>驱动程序还可以跨越多个时段来考虑可能发生的情况、季节性、新产品或计划的推出等。</p>
+<blockquote>
+<p><strong>机会成本</strong><br>
+请记住，模型可以由多个驱动程序组成，并且变得非常复杂。将这些驱动因素和调整因素输入模型所需的时间越多，构建、分配收入或支出以及重新预测本可以更好地用于其他地方创造价值的时间就越长。确保只选择关键可控因素作为模型中的驱动因素，以避免过度设计预测过程。</p>
+</blockquote>
+<p>SAP Analytics Cloud已经可以帮助决策者在设计基于驱动因素的模型之前分析数据，从而真正了解推动其业务的关键因素。它可以使用强大的可视化和人工智能功能识别变量之间的相关性，从而轻松部署分析模型，更快地评估其信息。Smart Insights、Search to Insights和Smart Discoverys等功能可帮助企业识别以下内容：</p>
+<ul>
+<li>关键影响因素和关键绩效指标</li>
+<li>应删除的异常值和一次性事件，以“规范化”信息</li>
+<li>数据中隐藏的模式</li>
+</ul>
+<p>图4.1显示了名为Search to Insights的SAP Analytics云功能，该功能允许用户使用自己的母语（即不需要编码）输入数据以分析数据。在本例中，用户要求SAP Ana  lytics Cloud按时间和货币显示营业收入，因此系统生成了一个具有趋势线和过滤能力的丰富交互式可视化。</p>
+<figure data-type="image" tabindex="1"><img src="https://Jonathan4s.github.io/post-images/1617349073207.png" alt="" loading="lazy"></figure>
+<p>在一个不断变化的环境中，几乎需要立即反映市场因素，因此了解组织内部的依赖关系非常重要。当损益项目被选为后续流程的驱动因素后发生变化时，需要在受影响的行中逐步进行调整。开发可靠的通信线路和对这些依赖关系的深入理解可以确保所有相关方理解为什么当驱动因素发生变化时，预测可能需要重新编制和调整。能够轻松地访问数据，而不必经过强化培训，这对于分析师快速应对市场变化至关重要。</p>
+<h3 id="输入数据和选择特征">输入数据和选择特征</h3>
+<p>对于基于驱动程序的规划工具（如SAP Analytics Cloud）来说，让数据输入尽可能灵敏和直观是至关重要的，这样用户就可以进行迭代，而不必使用计算器。然而，即使易用性是一个目标，组织也不能绕过保护历史数据完整性的安全措施。</p>
+<p>在执行自上而下的分解时，SAP Analytics Cloud允许计划人员将已批准或最终确定为只读的单元格锁定，并让解决方案根据这些标准决定哪些单元格是“输入就绪”的，如图4.2所示。</p>
+<figure data-type="image" tabindex="2"><img src="https://Jonathan4s.github.io/post-images/1617349092567.png" alt="" loading="lazy"></figure>
+<h3 id="设计和测试模型">设计和测试模型</h3>
+<p>任何建模过程中最重要的部分都是迭代，有时迭代会失败并进行后续修正。了解模型的局限性、变量、数据的质量和设计约束将使计划人员能够专注于自己的工作，而不会被细节所左右。实施一个持续改进计划比部署一个技术无法补救的坏流程更可取。</p>
+<p>SAP Analytics Cloud提供了一套灵活的工具，允许用户进行更改、添加维度、清除和种子数据、维护层次结构以及动态创建私有/公共版本。准备要加载的数据是一个重要的步骤，因此SAP Analytics Cloud通过使用ETL工具替换、转换和编辑来自不同源系统的数据来简化数据转换，如图4.3所示。</p>
+<figure data-type="image" tabindex="3"><img src="https://Jonathan4s.github.io/post-images/1617349108127.png" alt="" loading="lazy"></figure>
+<p>然而，尽管理解分析工具的技术能力很关键，但任何建模练习的另一个重要部分是确保流程涵盖端到端业务场景。优先考虑一个涵盖核心功能的设计，把“好东西”留到以后再说。</p>
+<p>开发基于驱动程序的模型在很大程度上依赖于它所能提供的数据以及用户如何与此数据集交互。通过将模型与实时功能和模拟功能相结合，金融部门可以更好地了解其数据的相关性，然后对基于驱动因素的模型进行微调，以生成准确的规划信息。在以下部分中，我们将讨论一些集成过程和功能，这些过程和功能将使您能够实时交互和分析公司财务中特定驱动因素的影响。</p>
+<h2 id="42过程集成">4.2过程集成</h2>
+<p>制定计划过程可能是一项具有挑战性的工作，而为正确的工作使用正确的工具往往是成功与失败的区别。在本节中，我们将讨论如何使用VDT和数据操作等工具在SAP Analytics云中集成基于驱动程序的模型，以交互和调整业务驱动程序。这些工具有助于展示对公司短期、中期和长期财务状况的潜在下游影响。</p>
+<h3 id="创建值驱动程序树">创建值驱动程序树</h3>
+<p>价值驱动树（VDT）是所有驱动因素和账户关系的物理表示，当这些关系发生变化时，会影响产出或对财务结构产生下游影响。</p>
+<p>vdt通常用于模拟假设情景，并允许金融用户在一个故事中动态地更改其驱动程序，以便他们能够实时看到潜在的影响。它是一种强大的可视化技术，可以演示这些驱动因素与企业价值创造链之间的相互依赖性和紧密集成。这些通常基于层次结构（如财务报表版本）。VDT允许用户通过用户友好的界面输入硬货币金额的百分比（+/-）来调整模型。</p>
+<p>VDT可以有不同类型的节点，例如显示特定数据源中存储的信息的数据源、同比数据聚合、VDT中两个或多个帐户的合并，以及允许金融用户执行简单操作的简单计算（例如。，将两个账户合并在一起或进行计算，如总合同价值或平均合同价值等）。</p>
+<p>图4.4显示了一个示例VDT，它允许用户通过用户友好的界面执行动态模拟。在这个例子中，我们选择将工厂的产量提高10%。</p>
+<figure data-type="image" tabindex="4"><img src="https://Jonathan4s.github.io/post-images/1617349127323.png" alt="" loading="lazy"></figure>
+<h3 id="账户设计">账户设计</h3>
+<p>定义正确的帐户结构是任何分析应用程序的基础。报告在很大程度上依赖于这些账户结构，包括财务信息和非财务数据（即统计账户或分配驱动因素）。损益表的创建是为了便于报告，并使投资者和利益相关方能够轻松衡量公司的健康状况。使SAP Analytics Cloud等工具能够促进报告所需的开销量与设计会计科目表的质量和思维过程直接相关。</p>
+<p>图4.5显示了层次结构维护编辑器，允许用户在科目表中移动科目。此编辑器允许解决方案架构和财务用户直接从SAP Analytics Cloud快速调整其会计科目表，以符合财务标准（例如，美国公认会计原则或国际财务报告标准）。这可以在尝试添加新帐户的关闭过程中节省大量时间。</p>
+<figure data-type="image" tabindex="5"><img src="https://Jonathan4s.github.io/post-images/1617349140777.png" alt="" loading="lazy"></figure>
+<p>要将事情放到上下文中，您需要意识到如何定义您的会计结构以利用其他功能。价值驱动因素的有效性取决于用于生成价值驱动因素的账户或驱动因素的设计。拥有适当的帐户结构可以让用户更快地创建故事或进行计算。</p>
+<h3 id="数据移动操作">数据移动/操作</h3>
+<p>SAP Analytics云的数据操作功能对于生成预测的第一步至关重要。财务用户通过为预测过程生成基线来使用数据操作来为预测播种。它们可用于复制或删除上一期间的数据，并根据特定的驱动因素触发计算。用户可以设置提示来指定正确的数据交叉点，这些提示可以嵌入到stories中，也可以从SAP Analytics Cloud中的sequence designer中触发。</p>
+<p>图4.6显示了一个种子函数的基本示例，该函数将以前的预测复制到当前的预测中，以用作构建的基线。用户可以根据需要设置过滤器，以确保只复制所需的数据，并且从数据集中排除诸如基础调整或一个计时器之类的内容。</p>
+<figure data-type="image" tabindex="6"><img src="https://Jonathan4s.github.io/post-images/1617349154522.png" alt="" loading="lazy"></figure>
+<p>SAP Analytics Cloud还允许用户跨版本移动数据，最重要的是跨模型移动数据。这意味着架构师和系统设计人员可以按功能分解模型，拥有不同的源系统，并将它们集成到SAP Analytics云中。</p>
+<h2 id="43假设分析和规划模拟">4.3假设分析和规划模拟</h2>
+<p>正如你所想象的，基于驱动因素的计划并不是一剂灵丹妙药，也不是一颗灵丹妙药，但它确实比只考虑历史数据的传统流程有显著的优势。如果分析允许从被动的心态转向主动的观点，因为它鼓励分析师测试不同的缓解策略。也许最重要的是，它减少了计划成本，因为它比传统的预算周期花费更少的时间，而且通常需要更少的迭代。</p>
+<p>在本节中，我们将重点介绍假设分析和规划模拟。我们将从如何为假设场景选择正确标准的提示开始，然后讨论反向公式如何成为通过SAP Analytics Cloud stories创建输入表单的强大工具。在最后几节中，我们将讨论用户如何使用SAP Analytics Cloud的现成功能轻松共享、协作和发布模拟。</p>
+<h3 id="设计假设情景">设计假设情景</h3>
+<p>假设情景是为跟踪公司业绩而建立的实际测量，而假设情景是为分析特定业务决策的潜在影响而建立的预测或预算模拟。假设情景可以比较并合并成一个官方版本，可以在外部或内部报告。</p>
+<p>对假设情景进行方差分析有助于管理者排除意外后果。有了这些信息，财务部门就可以对这些信息进行根本原因分析，并制定一个计划，直到下一个预测周期。在实际月份之前理解、计划、模拟和执行的能力使业务能够灵活地准备和调整以适应快速变化的市场，并以前瞻的心态持续运营。</p>
+<p>通过使用SAP Analytics Cloud进行场景建模，用户可以使用我们在第4.2节中介绍的VDT等工具轻松地生成模拟场景。SAP Analytics Cloud还通过使用智能发现功能提供了一个自动生成的模拟解决方案，允许用户选择一个版本，设置过滤器以缩小分析范围，并在故事中生成一个图形化的模拟选项卡。此模拟选项卡是基于回归模型创建的。看看图4.7中的智能发现特性。模拟功能允许用户修改业务驱动因素，如公司销售额或商品销售成本在右侧；分析师可以在左侧的图表中实时观察影响。</p>
+<figure data-type="image" tabindex="7"><img src="https://Jonathan4s.github.io/post-images/1617349176730.png" alt="" loading="lazy"></figure>
+<p>这种假设情景模型还预先打包了瀑布图，以帮助用户进行方差分析，并在修改关键驱动因素或影响因素时可视化任何潜在的积极或消极影响。</p>
+<h3 id="设计逆公式">设计逆公式</h3>
+<p>报告结构通常有计算列来表示诸如预测收入和增长百分比之类的内容。报表通常以复杂而繁琐的方式复制，以适应规划要求，并允许财务用户更改间接影响报表中这些计算公式的关键驱动因素。</p>
+<p>一个非常流行的要求是允许用户调整这些公式，以达到预期的结果，而无需更改基础组件。要将公式转换为可输入的单元格，系统必须了解控制哪些内容可以更改以及哪些组件需要在公式定义中保持静态的规则。这可以通过在SAP Analytics Cloud中设置反向公式来实现。</p>
+<p>逆公式有两种类型：逆公式和条件逆公式。两者之间的唯一区别在于，后者可以设置为仅在满足某个条件时（例如，当您希望在预测数据而不是实际数据上运行特定计算时）才进行计算。如图4.8所示，语法如下：</p>
+<Base function> | INVERSEIF(<Condition>, <Inverse formula>)
+<p>在设计逆公式时，用户需要了解它的一些功能，例如处理异常聚合的能力（即，在执行聚合的基础上，帐户还需要考虑一个额外的维度，例如乘积，以执行两个维度的求和）。</p>
+<figure data-type="image" tabindex="8"><img src="https://Jonathan4s.github.io/post-images/1617349192823.png" alt="" loading="lazy"></figure>
+<h3 id="确定适当数量的规划方案">确定适当数量的规划方案</h3>
+<p>一个公司需要的预测场景的数量将取决于其重新预测的需要。大多数情况被定义为历史数据（实际值）和计划数据（预测）的组合，其中第一部分表示迄今为止的月数，第二部分表示财政或日历年中剩余的月数（例如，1+11、2+10、3+9）。一些公司遵循长期战略，采用12个月以上的滚动预测sce  narios；另一些在不确定性较小的市场中运营的公司则倾向于每季度预测一次，并保持在当前财年内。</p>
+<p>SAP Analytics Cloud可轻松整合这些不同版本，并允许用户在其故事中插入预测布局，根据截止日期自动回溯和/或转发，并根据本年迄今或本年迄今的衡量标准计算总和。图4.9显示了布局、时间框架和计算的选项，这些选项允许用户定义滚动预测，从而轻松地自动实现预测网格。</p>
+<figure data-type="image" tabindex="9"><img src="https://Jonathan4s.github.io/post-images/1617349207096.png" alt="" loading="lazy"></figure>
+<h3 id="共享和发布场景分析">共享和发布场景分析</h3>
+<p>协作是基于驱动的规划的另一个关键阶段。与内部部署和云解决方案相比，SAP Analytics Cloud的优势之一是它提供了一个在各个故事中保持一致的协作套件。在图4.10中的示例中，一个用户询问另一个用户某个特定段中方差的来源。</p>
+<figure data-type="image" tabindex="10"><img src="https://Jonathan4s.github.io/post-images/1617349222729.png" alt="" loading="lazy"></figure>
+<p>通过SAP Analytics Cloud，可以共享VDT和智能发现，以便与相关方快速发送和模拟假设情景。这意味着用户不必离开SAP Analytics Cloud，也不必通过电子邮件和文件处理同一信息的不同版本；所有内容都保留在原来共享的同一个故事或VDT中。</p>
+<p>故事是一个强大的叙事渠道，因为它们结合了可视化和输入准备网格与嵌入式模拟。用户可以通过智能发现和vdt将自动生成的假设场景添加到任何故事中；这些场景可以具有上下文意识，以确保对其应用故事过滤器，并且可以实时写回正确的私有和公共版本。这些还可以通过SAP Analytics Cloud的协作功能共享。</p>
+<p>在本节中，我们回顾了用于基于驱动程序的规划的一些最强大的SAP Analytics云功能，包括反向公式、假设情景、数据操作和VDT。这些特性很好地打包在一个集成的解决方案中，具有用户友好的界面。我们还详细介绍了构建基于驱动程序的模型的功能方面，并解释了分析师必须做出的关键决策，以便为其业务选择正确的驱动程序、快速迭代和建模。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[4.利用SAP®Analytics Cloud引入财务规划和分析-预测]]></title>
         <id>https://Jonathan4s.github.io/post/li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi/</id>
         <link href="https://Jonathan4s.github.io/post/li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi/">
         </link>
@@ -173,7 +271,7 @@ The stock of knowledge in the past can only solve the problems of the present，
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[利用SAP®Analytics Cloud引入财务规划和分析-预算]]></title>
+        <title type="html"><![CDATA[3.利用SAP®Analytics Cloud引入财务规划和分析-预算]]></title>
         <id>https://Jonathan4s.github.io/post/li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi-yu-suan/</id>
         <link href="https://Jonathan4s.github.io/post/li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi-yu-suan/">
         </link>
@@ -265,7 +363,7 @@ SAP Analytics Cloud还允许金融用户运行货币换算。<br>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[利用SAP®Analytics Cloud引入财务规划和分析-财务规划与分析基础]]></title>
+        <title type="html"><![CDATA[2.利用SAP®Analytics Cloud引入财务规划和分析-财务规划与分析基础]]></title>
         <id>https://Jonathan4s.github.io/post/li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi-cai-wu-gui-hua-yu-fen-xi-ji-chu/</id>
         <link href="https://Jonathan4s.github.io/post/li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi-cai-wu-gui-hua-yu-fen-xi-ji-chu/">
         </link>
@@ -464,7 +562,7 @@ SAP Analytics Cloud还允许金融用户运行货币换算。<br>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[利用SAP®Analytics Cloud引入财务规划和分析-前言]]></title>
+        <title type="html"><![CDATA[1.利用SAP®Analytics Cloud引入财务规划和分析-前言]]></title>
         <id>https://Jonathan4s.github.io/post/li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi-qian-yan/</id>
         <link href="https://Jonathan4s.github.io/post/li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi-qian-yan/">
         </link>
