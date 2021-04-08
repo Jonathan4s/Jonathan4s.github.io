@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimal-ui" />
+    <title>9.利用SAP®Analytics Cloud引入财务规划和分析-部署的第一步 | GreenOlive</title>
+<link rel='stylesheet' id='puma-css'  href='https://Jonathan4s.github.io/styles/main.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='puma-css'  href='https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css' media='screen' />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<script type='text/javascript' src='https://Jonathan4s.github.io/media/scripts/jquery.js'></script>
+<script type='text/javascript' src='https://Jonathan4s.github.io/media/scripts/jquery-migrate.min.js'></script>
+        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+         <script >hljs.initHighlightingOnLoad();</script>
+         
+</head>
+<body class="single single-post postid-3788 single-format-standard">
+	<!--加入跟随滑动的顶部-->
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title">
+				<a href="https://Jonathan4s.github.io" title="GreenOlive">GreenOlive</a>
+			</h1>
+		</div>
+
+		<a class="primary-nav-trigger" href="javascript:void(0)">
+			<span class="menu-icon"></span>
+		</a>
+		
+	</header>
+		<div class="site-navigation-wrapper">
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<ul class="primary-nav">
+                    
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="Home" href="/">Home</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="LIST" href="/archives">LIST</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="Topic" href="/tags">Topic</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="About" href="/post/about">About</a></li>
+                
+	
+			</ul>
+		</nav>			
+	</div>
+	<!--跟随滑动的顶部结束-->
+	<div class="surface-content">    <main class="main-content">
+        <section class="section-body">
+                            <header class="section-header u-textAlignCenter">
+                    <h2 class="grap--h2">9.利用SAP®Analytics Cloud引入财务规划和分析-部署的第一步</h2>
+                    <div class="block-postMetaWrap">
+                        <time>2021-04-08</time>
+                    </div>
+                </header>
+                <div class="grap">
+					  <p class="with-img"><img width="1139" height="759" src="https://Jonathan4s.github.io/post-images/9li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi-bu-shu-de-di-yi-bu.png" class="attachment-full size-full wp-post-image" alt="9.利用SAP®Analytics Cloud引入财务规划和分析-部署的第一步" /></p>
+					<p>在本《 E-Bite》的前七个部分中，我们概述了FP＆A基础知识，并展示了SAP Analytics Cloud如何解决财务计划流程中的常见问题。 既然已经研究了SAP Analyt ics Cloud中的这些独特功能，接下来的问题是部署应采取哪些第一步。</p>
+<p>无论金融机构仍在使用电子表格还是已经有成熟的解决方案，采用新的基于云的解决方案都将一些需要解决的关键问题置于最前沿：</p>
+<ul>
+<li>金融机构应该从小做起还是全力以赴？</li>
+<li>我们应该在什么情况下试行？</li>
+<li>我们应该从哪里开始？</li>
+</ul>
+<p>要了解试点或概念验证（POC）的核心成功标准，您需要定义可衡量的性能指标。 如果没有成功的条件或确定成功的预定义指标，飞行员的失败机会就会大大增加。 能够衡量使用情况的改进并突出使用率和准确性的改进对于确保额外资源和预算来推广其他用例有很长的路要走。</p>
+<p>在本节中，我们将探讨如何开始使用SAP Analytics Cloud，无论您的组织是从另一个FP＆A解决方案迁移还是从头开始。 我们将概述构建初始参与的最佳方法，包括应纳入项目或POC的指标类型，以及如何在项目计划中构建核心指标以使其成功。 在第8.1节中，我们将讨论两个最常见的部署选项。 首先，我们将研究完整的计划迁移，或更准确地说，是对现有解决方案的重新实施。 然后，我们将探索一个更具衡量性的SAP Analytics Cloud入门选项，该选项针对特定的计划方案扩展了现有的SAP BPC系统和SAP Analytics Cloud的支持。 在8.2节中，我们将介绍如何最好地确定要在SAP Analytics Cloud中实施的初始业务流程。在8.3节，8.4节和8.5节中，我们将分别探讨SAP Analytics Cloud实施中项目管理，变更管理和流程优化的最佳实践。</p>
+<h2 id="81确定部署选项">8.1确定部署选项</h2>
+<p>在组织决定实施SAP Analytics Cloud之后，实际上有两个部署选项：</p>
+<ul>
+<li>
+<p><strong>迁移/重新实现</strong></p>
+<p>术语“迁移”使人想到了一个自动向导，它引导您完成从一个平台到另一个平台的迁移过程。 当迁移到SAP Analytics Cloud时，这种类型的迁移并不存在，但是可以使用加速器和第三方内容来极大地加速实施。</p>
+</li>
+<li>
+<p><strong>混合规划解决方案</strong></p>
+<p>这通常是指组织使用可视化，数据收集应用程序或互补计划模块扩展现有的本地SAP BPC系统。</p>
+</li>
+</ul>
+<p>在本节中，我们将有意忽略选择迁移或混合方案的两个最大驱动因素：预算和路线图（既是客户IT也是寿终正寝的解决方案）。 这些现实是众所周知的，也是不可商量的。 相反，我们将重点介绍五个最常见的决策驱动因素：</p>
+<ul>
+<li>
+<p><strong>公司或政府数据政策</strong></p>
+<p>SAP Analytics Cloud具有大量的物理数据管理，包括SAP NS2云和单租户部署选项。<br>
+但是，即使SAP Analytics Cloud具有公认的安全性，一些组织可能仍对它们敏感或无法放入云中而获得敏感的计划数据。 在这里，可以利用混合方法来维护该数据的本地存储。</p>
+</li>
+<li>
+<p><strong>Solution fatigue</strong></p>
+<p>不想从最终用户或管理角度支持多种计划解决方案的组织无法利用混合部署选项。 值得注意的是，混合解决方案可以进行用户细分，其中每个用户都将他们的时间花费在单个系统上。</p>
+</li>
+<li>
+<p><strong>数据挖掘/预测需求</strong></p>
+<p>如果SAP Analytics Cloud的预测和数据挖掘功能是在整个计划过程中采用的关键驱动力，则需要进行全面迁移。</p>
+</li>
+<li>
+<p><strong>综合计划网</strong></p>
+<p>在成熟的计划流程中，预测值可以驱动各种相互关联的业务流程。 在这种情况下，通过混合方案将大量集成到SAP Analytics Cloud规划过程中。</p>
+</li>
+<li>
+<p><strong>收购</strong></p>
+<p>加入现有的计划流程可能会给管理人员带来很大的变化。 在进行收购的情况下，可以将新的子公司用作SAP Analytics Cloud的初始用例，从而消除变更管理问题并防止对现有规划解决方案进行重大修改。</p>
+</li>
+</ul>
+<h3 id="迁移方案">迁移方案</h3>
+<p>所有IT实施都需要扎实的内部支持-但是特别是迁移是棘手的，因为当前的产品或流程已经具有预先存在的用户群，因此企业可能会认为事情的方式“足够好”。 当人们以特定的方式工作时，他们通常会习惯这种方式，并在他们知道的过程中感到安慰，即使这是痛苦的或结果不理想。 财务团队常常会带着恐惧和不确定性来应对新流程或新产品的想法。</p>
+<p>有效的组织变革管理可以识别所有类型的利益相关者（一方面是主要的倡导者或推动者，另一方面是反对者或阻碍者），并以对组织有益和有益的方式解决他们的担忧。 它使项目中的每个利益相关者都有发言权，并帮助他们了解其流程将如何改变。</p>
+<p>随着时间的推移，规划解决方案会从其最初的文档和范围发展壮大。 只有在新解决方案涵盖规划团队的实际流程而不仅仅是文档化的流程的情况下，才可以采用用户。 用户采访，系统日志记录，报告清单和早期用户测试提供了第一道防线，以确保满足用户的实际需求。</p>
+<h3 id="混合计划方案">混合计划方案</h3>
+<p>目前，SAP社区不仅对SAP Analytics Cloud感兴趣，而且对SAP翻新过的ERP平台SAP S / 4HANA充满了热情。  SAP S / 4HANA重新构想了现有的业务模型，以更有效地将人员和业务网络联系起来并创造客户价值。 从旧的SAP或非SAP ERP系统到SAP S / 4HANA的业务通常始于财务。 碰巧的是，FP＆A是作为这些更广泛的ERP实施的一部分而处理的首批财务用例之一。</p>
+<p>让我们简要考虑一下大多数SAP客户的内部部署规划环境。 在过去的十年中，SAP BPC一直是成千上万个SAP客户的大型内部部署独立计划产品。 现在，SAP BPC随SAP S / 4HANA一起交付（一个称为SAP BPC for SAP S / 4HANA的版本，有时也称为针对SAP S / 4HANA优化的SAP BPC），以提供可利用SAP S /  4HANA。 但是，尽管SAP继续支持和推广SAP BPC作为内部部署计划的推荐解决方案，但SAP BPC的所有新创新都是通过与SAP Analytics Cloud的连接来实现的。</p>
+<p>实际上，为了促进其客户向SAP Analytics Cloud的过渡，SAP在构建SAP Analytics Cloud时就考虑了SAP BPC集成。 许多现有的SAP BPC客户正在通过混合计划场景将SAP Analytics Cloud部署为对其现有内部部署计划解决方案的云扩展。 无论财务组运行哪种SAP BPC版本或版本，SAP Analytics Cloud都可以提供强大的集成选项，这些选项使现有客户可以继续利用其投资，同时获得SAP Analytics Cloud的收益。</p>
+<p>在下一节中，我们概述了指导原则，指导原则是如何选择合理且有影响力的方案，以将SAP Analytics Cloud实施作为基础，以及如何通过解决方案中的关键数据和流程集成功能进行交流。</p>
+<h2 id="82选择方案">8.2选择方案</h2>
+<p>许多成功的SAP Analytics Cloud实施都始于用于“证明”解决方案可行性的单个财务计划方案（例如，销售代表的地域或配额管理）。</p>
+<p>但是，无论您是要迁移到SAP Analytics Cloud还是要扩展当前的SAP BPC规划环境，为首次实施选择的方案都是至关重要的。 尽早获得支持并与有影响力的用户社区打成一片，可能会成败组织内新软件解决方案的成功。 您所在组织的行业可能会帮助您确定从哪些规划方案开始才有意义； 例如，制药公司和A＆D公司将重点放在运行项目上，因此可能有意义的方案是节省项目和进行资本计划，而您将重点放在发现正在运行的效率低下的项目上并将其削减。 如果您的组织运作孤岛，那么推出一些通用但标准化的内容（例如成本中心计划）也可能会产生很大的影响。</p>
+<p>决定从哪个场景开始并不费力。 作为成功“快速赢得” SAP Analytics Cloud项目的核心的计划流程通常具有以下关键属性：</p>
+<ul>
+<li>
+<p><strong>计划人员的Excel使用率较低</strong></p>
+<p>每天都不使用Excel的用户经常会与传统的计划应用程序打交道。 SAP Analytics Cloud拥有零占用空间的Web客户端，可提供直观的用户体验，同时消除了围绕Microsoft Office版本控制和特定于产品的Excel加载项的IT难题。 同样，每月仅一次或两次在系统中的用户也会在工具使用，身份验证和访问方面遇到麻烦。</p>
+</li>
+<li>
+<p><strong>需要多个版本/场景</strong></p>
+<p>SAP Analytics Cloud提供了一种真正具有革命性的版本控制系统，它允许用户动态创建私有版本的临时计划方案，该方案可以通过单击按钮在用户组中共享。 这些版本可以在团队内部进行协作，然后再提交给管理层进行审查。</p>
+</li>
+<li>
+<p><strong>基于驱动程序</strong></p>
+<p>SAP Analytics Cloud提供了非常直观的图形VDT，使计划人员可以可视化上游和下游计算之间的驱动程序基础关系。 在VDT中，计划人员可以更改和更新驱动程序以及实际结果。</p>
+</li>
+<li>
+<p><strong>可预测的</strong></p>
+<p>只需单击一下按钮，就可以提供预测性见解的智能见解功能是SAP Analytics Cloud的巨大增值，并且仍然是客户青睐的领域。</p>
+</li>
+</ul>
+<p>在选择SAP Analytics Cloud规划方案时，请探索此处列出的属性将如何受益。 首先实施的方案总是有选择的，但是确保所选方案能够利用产品的差异性特征并在相对较短的时间内实施，将确保第一个方案不是最后一个方案。</p>
+<p>部署新计划解决方案的一个常见障碍是过早地发现该解决方案未集成其他关键软件组件或流程。 在确定初始项目时，了解项目将如何获取其数据并与流程中的人员建立联系是关键。</p>
+<p>利用实时数据和导入连接的能力意味着财务组织可以从多个位置获取数据，但是它们也可以将数据推送或写回到系统中。 最相关的示例是在月底，这是在结束周期中查看计划报告与实际报告很重要的原因。 自2018年11月发布SAP Analytics Cloud 2018.11起，便可以直接与SAP S / 4HANA规划表（表ACDOCP）集成。 此外，可以创建自定义OData服务以将数据写回到各种系统。</p>
+<p>了解从初始部署开始时，至关重要的是既能够利用来自各种源系统的数据，又能够将SAP Analytics Cloud的数据集成到其他系统中的现有流程中。 好消息是，现成的选项很多。</p>
+<h2 id="83云项目管理">8.3云项目管理</h2>
+<p>随着基于云的软件产品的出现，出现了一个普遍的误解，即不再需要公认的内部部署项目管理原则。 一些组织认为，他们可以在内部实施新系统，而无需在企业实施中通常看到的项目结构。 不幸的是，这种谬误导致了许多不成功的实现。</p>
+<p>在实践中，尽管SaaS解决方案比传统企业软件更加直观和易于使用，但是对于云系统来说，部署传统的内部部署解决方案时仍然需要相同的严格性和投资。 项目管理仍然是云计算的关键。 当然，本地部署和云部署之间存在一些差异：</p>
+<ul>
+<li>需要各种配置选项</li>
+<li>将现有的本地系统（可能包括防火墙外部的系统）与新的基于云的解决方案集成在一起，这可能会导致额外的开销</li>
+<li>定制预创建的数据模型以满足业务需求的要求</li>
+</ul>
+<p>SAP当前的项目管理方法SAP Activate用于云和本地实施。 它结合了敏捷和瀑布模型的最佳方面，强调了原型设计和设计的灵活性以及在业务驱动的时间内完成项目推出所需的任务驱动的严格性。<br>
+SAP Activate由五个核心阶段组成。 前两个是非常有机和迭代的，而随后的阶段则更加标准化：</p>
+<ul>
+<li>
+<p><strong>准备阶段</strong></p>
+<p>此阶段包括解决方案范围界定和价值确定，以及项目计划和路线图的创建。</p>
+</li>
+<li>
+<p><strong>探索阶段</strong></p>
+<p>该阶段包括基准实施构建，解决方案设计验证以及项目和冲刺计划的固化。</p>
+</li>
+<li>
+<p><strong>实现阶段</strong></p>
+<p>此阶段包括冲刺执行，系统集成测试，价值审核和设置操作。</p>
+</li>
+<li>
+<p><strong>部署阶段</strong></p>
+<p>此阶段包括技术和系统测试，组织和生产就绪，转换以及SAP卓越中心/支持或维护就绪。</p>
+</li>
+<li>
+<p><strong>运行阶段</strong></p>
+<p>此阶段包括价值管理，应用程序生命周期管理（ALM）和正在进行的操作。</p>
+</li>
+</ul>
+<p>请记住，项目的成功不仅取决于最初的用户采用情况，还取决于系统的持续使用情况。 适当的项目管理方法可以确保成功部署SaaS软件，同时降低风险。</p>
+<h2 id="84组织变革管理">8.4组织变革管理</h2>
+<p>变化是不变的这一事实并不能减少我们对它的抵抗力。人们所知道和理解的东西让人感到安慰，金融机构内部的变化也不例外。</p>
+<p>许多框架和方法可以帮助您以一种被认为是积极和进步的方式引入变革。例如，jeffhiatt的ADKAR模型在实现第一个SaaS部署的组织中取得了巨大的成功。让我们考虑一下ADKAR的每一层，以及它如何应用于为it项目融资：</p>
+<ul>
+<li>意识到变革的必要性</li>
+</ul>
+<p>大多数财务组织完全依赖于使用已经存在多年（有时甚至更长）的Excel和特定报告。确保财务团队了解所述的变更案例至关重要。大多数时候，这种改变的理由是减少人工劳动，腾出资金来执行“更高的大脑功能”活动，而不是专注于数据收集、整理和汇总。</p>
+<ul>
+<li>
+<p><strong>支持变革的愿望</strong></p>
+<p>在财务部门获得支持和拥护是至关重要的。确保财务团队的意见得到听取，并在设计中发挥关键作用，将在财务界产生一种愿望，希望看到项目完成。当Excel处于大多数财务规划流程的中心时，很难将其排除在外，因此展示SAP Analytics Cloud类似Excel的功能，并与他们熟悉的工具建立关联，对于灌输变革的愿望非常重要。</p>
+</li>
+<li>
+<p><strong>知道如何变革</strong></p>
+<p>在项目早期让金融界参与变革，并在设计之前指导他们完成解决方案的教程，是确保金融界参与设计的一个好方法。如果你提高了参与度，财务组织可以积极参与研讨会，并了解解决方案将如何应用于他们。这将使您的金融从业者能够想象解决方案如何取代他们目前使用的解决方案。</p>
+</li>
+<li>
+<p><strong>接受变革的能力</strong></p>
+<p>获得管理层的支持，并为变革的实施创造基层支持，这将确保内部金融界有时间实施变革。许多金融机构实行精益经营，没有太多时间专注于新的FP&amp;A实施，这限制了采用。行政支持有助于加强对项目的关注。</p>
+</li>
+<li>
+<p><strong>加强以巩固变更</strong></p>
+<p>确保正在实施的新软件解决方案成功地被用户社区完全采纳，在项目生命周期的早期处理这些变更原则，并为组织的变更管理活动分配专用资源</p>
+</li>
+</ul>
+<h2 id="85工艺优化">8.5工艺优化</h2>
+<p>大多数实施新软件解决方案的组织都是从小型企业开始的，他们希望能够快速地获得可量化的成功因素，从而引起一些轰动。在产品拥有大量的内部追随者之后，用户可以在逐渐了解工具的优点时识别新的用例。</p>
+<p>对于SAP Analytics云项目，第一个试用的用例或第一个作为POC核心交付物的用例应以某种方式关注于改进现有规划流程。三个关键的过程改进类别已被有效地用于收集积极的项目成果：</p>
+<ul>
+<li>
+<p><strong>精确度改进</strong></p>
+<p>SAP Analytics Cloud中的某些产品功能（如VDT、Smart Insights或场景和版本控制）是否允许在规划周期内实现更好的准确性？</p>
+</li>
+<li>
+<p><strong>改善用户体验</strong></p>
+<p>协作工具和流程是否会减少手工劳动，并为知识工人创造更多的时间？首款移动SAP Analytics云用户体验是否会提高用户社区的使用率？</p>
+</li>
+<li>
+<p><strong>更好的法规遵从性</strong></p>
+<p>解决方案中的调度工具和流程改进是否改善了治理和法规遵从性？</p>
+</li>
+</ul>
+<p>可度量的流程优化度量对于确保组织在实现中获得快速和有形的价值至关重要；如果没有度量，项目很可能会被其他更具战略性的活动搁置一旁。</p>
+<p>在本节中，我们列出了两种最常见的SAP Analytics云实现的关键步骤：完全迁移和扩展现有环境。然后我们回顾了如何确定初始用例，以及如何定义项目的成功标准。最后，我们将探讨如何最好地为SAP Analytics云项目定义项目管理和变更管理。</p>
+
+                </div>
+
+                <div class="post--keywords" itemprop="keywords">
+					          </div>
+
+
+
+                      </section>
+    </main>
+</div>
+	<footer class="site-footer u-textAlignCenter">
+    	<div class="footer-branding">
+            <a href="https://Jonathan4s.github.io" title="GreenOlive">GreenOlive</a>
+									<p class="site-description">约君切勿负初心，天上人间均一是</p>
+			         </div>
+		 <hr />
+		 <div class="social-links">
+		                       
+                            
+                           
+                            
+                           
+                            	
+			<span class="social-link"><a href="https://github.com/Jonathan4s" target="_blank"><i class="iconfont icon-github"></i></a></span>	
+			                         
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            	
+			<span class="social-link"><a href="https://www.instagram.com/peoplo/" target="_blank"><i class="iconfont icon-instagram"></i></a></span>	
+			                         
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+				</div>
+        <div class="footer-copy">
+                Powered by <a href="https://jonathan4s.github.io/post/about/" target="_blank">Jonathan</a>
+        </div>
+
+    </footer>
+	<div class="back-to-top u-hide" onclick="backToTop();"><i class="iconfont icon-xiangshang"></i></div>
+
+<script type='text/javascript' src='https://Jonathan4s.github.io/media/scripts/main.js'></script>
+</body>
+</html>
