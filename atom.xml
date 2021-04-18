@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Jonathan4s.github.io</id>
     <title>GreenOlive</title>
-    <updated>2021-04-18T11:37:33.718Z</updated>
+    <updated>2021-04-18T11:46:36.538Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Jonathan4s.github.io"/>
     <link rel="self" href="https://Jonathan4s.github.io/atom.xml"/>
@@ -11,64 +11,6 @@ The stock of knowledge in the past can only solve the problems of the present，
     <logo>https://Jonathan4s.github.io/images/avatar.png</logo>
     <icon>https://Jonathan4s.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, GreenOlive</rights>
-    <entry>
-        <title type="html"><![CDATA[IDM下载工具]]></title>
-        <id>https://Jonathan4s.github.io/post/idm-xia-zai-gong-ju/</id>
-        <link href="https://Jonathan4s.github.io/post/idm-xia-zai-gong-ju/">
-        </link>
-        <updated>2021-04-18T10:21:54.000Z</updated>
-        <content type="html"><![CDATA[<p>IDM下载视频功能的安装及使用教程</p>
-<h3 id="功能在网页上对任何视频任意并快速下载">功能：在网页上对任何视频，任意并快速下载。</h3>
-<p>该IDM软件+IDM插件，配合浏览器上的插件一起使用。</p>
-<blockquote>
-<p>IDM俄语版，下载地址<br>
-链接：<a href="https://pan.baidu.com/s/1fdatikdS4e0BXHXx9-CaiQ">https://pan.baidu.com/s/1fdatikdS4e0BXHXx9-CaiQ</a><br>
-提取码：btt6</p>
-</blockquote>
-<p>基本条件：先下载之后，将文件解压，双击该exe格式文件进行安装。</p>
-<figure data-type="image" tabindex="1"><img src="https://Jonathan4s.github.io/post-images/1618742093770.png" alt="" loading="lazy"></figure>
-<h2 id="下面为安装和操作使用两部分">下面为<strong>安装</strong>和<strong>操作使用</strong>两部分</h2>
-<h3 id="一-安装">一、安装：</h3>
-<p><strong>IDM软件安装</strong></p>
-<p>1.选择第一个标准安装，点下一步</p>
-<figure data-type="image" tabindex="2"><img src="https://Jonathan4s.github.io/post-images/1618742108906.png" alt="" loading="lazy"></figure>
-<p>2.选择继续安装，点下一步<br>
-<img src="https://Jonathan4s.github.io/post-images/1618742125488.png" alt="" loading="lazy"></p>
-<p>3.选择一个安装的目录，点下一步</p>
-<figure data-type="image" tabindex="3"><img src="https://Jonathan4s.github.io/post-images/1618742140100.png" alt="" loading="lazy"></figure>
-<p>4.不动，点下一步。</p>
-<figure data-type="image" tabindex="4"><img src="https://Jonathan4s.github.io/post-images/1618742154081.png" alt="" loading="lazy"></figure>
-<p>5.配置不用改动，继续点下一步。</p>
-<figure data-type="image" tabindex="5"><img src="https://Jonathan4s.github.io/post-images/1618745084372.png" alt="" loading="lazy"></figure>
-<p>6.直接安装。</p>
-<figure data-type="image" tabindex="6"><img src="https://Jonathan4s.github.io/post-images/1618745099987.png" alt="" loading="lazy"></figure>
-<p>安装成功之后，在右下角，会有IDM的启动标记和一个奇怪的网页（直接关闭即可）。</p>
-<figure data-type="image" tabindex="7"><img src="https://Jonathan4s.github.io/post-images/1618745118940.png" alt="" loading="lazy"></figure>
-<p><strong>IDM插件安装</strong></p>
-<p>此时已经安装一半了，最后安装chrome浏览器IDM插件。</p>
-<blockquote>
-<p>插件链接：<a href="https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek/related">https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek/related</a></p>
-</blockquote>
-<p><strong>点击“添加至Chrome”</strong></p>
-<figure data-type="image" tabindex="8"><img src="https://Jonathan4s.github.io/post-images/1618745153111.png" alt="" loading="lazy"></figure>
-<p>出现此标志时代表<strong>安装成功。</strong></p>
-<figure data-type="image" tabindex="9"><img src="https://Jonathan4s.github.io/post-images/1618745172956.png" alt="" loading="lazy"></figure>
-<h2 id="二-操作使用">二、操作使用：</h2>
-<p>1.打开一个视频网站：如<a href="https://www.zanmeishi.com/video/11.html">https://www.zanmeishi.com/video/11.html</a></p>
-<p>2.点击&quot;下载该视频&quot;按钮</p>
-<figure data-type="image" tabindex="10"><img src="https://Jonathan4s.github.io/post-images/1618745200787.png" alt="" loading="lazy"></figure>
-<p>3.下载任意一个视频版本，点击它</p>
-<figure data-type="image" tabindex="11"><img src="https://Jonathan4s.github.io/post-images/1618745212584.png" alt="" loading="lazy"></figure>
-<p>4.弹出下载框，点击Start Downloading按钮</p>
-<figure data-type="image" tabindex="12"><img src="https://Jonathan4s.github.io/post-images/1618745225097.png" alt="" loading="lazy"></figure>
-<p>5.打开文件</p>
-<figure data-type="image" tabindex="13"><img src="https://Jonathan4s.github.io/post-images/1618745238116.png" alt="" loading="lazy"></figure>
-<p>6.正常播放，<strong>下载成功。</strong></p>
-<figure data-type="image" tabindex="14"><img src="https://Jonathan4s.github.io/post-images/1618745250525.png" alt="" loading="lazy"></figure>
-<p align="right">Joanthan</p>
-<p align="right">于北京</p>
-<p align="right">20210418整理</p>]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[雄关漫道真如铁,而今迈步从头越]]></title>
         <id>https://Jonathan4s.github.io/post/xiong-guan-man-dao-zhen-ru-tie-er-jin-mai-bu-cong-tou-yue/</id>
@@ -1165,6 +1107,23 @@ SAP Analytics Cloud还允许金融用户运行货币换算。<br>
 <p>最后一个选项是运行SAP Analytics Cloud和SAP BPC for SAP BW/4HANA，如图1.8所示。此部署选项连接SAP Analytics Cloud和SAP BW/4HANA，后者是SAP提供的新的、简化的内部数据仓库。这是SAP BPC的最新版本（11.0）。由于sapbw/4HANA强大的提取、转换和加载（ETL）和建模功能，许多拥有异构信息源的客户都会选择这种部署模型。</p>
 <p>本节介绍了预算和预测，并从较高的层次介绍了SAP分析云。现在让我们深入了解预算编制的细节。第2节将首先讨论预算创建（“播种”）和执行初始更新的过程，然后将预算目标下推到组织的较低级别。随着本节的继续，您将了解预算发布和运行budget to actual to forecast报告以分析SAP Analytics Cloud中的数字。</p>
 <figure data-type="image" tabindex="8"><img src="https://Jonathan4s.github.io/post-images/1617332842429.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[1.利用SAP®Analytics Cloud引入财务规划和分析-前言]]></title>
+        <id>https://Jonathan4s.github.io/post/li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi-qian-yan/</id>
+        <link href="https://Jonathan4s.github.io/post/li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi-qian-yan/">
+        </link>
+        <updated>2021-04-02T02:28:31.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="你将学到什么">你将学到什么</h1>
+<p>让您第一次了解如何使用SAP Analytics Cloud进行财务规划和分析流程！使用SAP Analytics Cloud进行预算、预测和基于驱动因素的规划。了解Smart Insights和Smart Discovery等功能如何将您的注意力集中在关键洞察上，并加速FP&amp;A。了解SAP Analytics Cloud的直观UI，了解自助报告的可能性。最后，看看企业协作是如何融入到这个SaaS解决方案中的。</p>
+<p><strong>前言</strong></p>
+<p>企业规划的核心是协作，协调组织的不同部分，从财务到运营再到人力资源，以创建一个将战略愿景转化为行动的共同计划。</p>
+<p>在过去的40年里，软件供应商不断改进他们的规划解决方案，更加接近于协作企业规划的愿景。</p>
+<p>借助SAP Analytics Cloud，SAP创建了一个解决方案，打破了传统上阻碍协作的筒仓。这些筒仓造成了人员分离、数据隔离、流程中断以及系统间昂贵而脆弱的集成。通过SAP Analytics Cloud，我们相信我们已经创建了一个规划解决方案，该解决方案能够更紧密地与组织实际的规划方式保持一致。我们重新设想了许多常见的规划解决方案，将其视为提供更好用户体验的机会。与同事共享数据、数据挖掘、预测分析和仪表板过去在不同系统中执行的所有关键任务都已直接集成到规划过程中，使这些能力民主化，并将其交给规划专业人员。</p>
+<p>在这篇电子文章中，我们TruQua的合作伙伴利用他们深厚的规划专业知识展示了SAP分析云技术的进步如何融入核心财务，为协作企业规划创建了一个现代平台。我们atSAP非常自豪地看到，到目前为止，我们的开发人员、合作伙伴和客户之间的协作在SAP Analytics Cloud中产生了巨大的成果，我们也很高兴看到下一步的发展。</p>
+<p><strong>Pras Chatterjee</strong></p>
+<p>SAP产品营销高级总监，负责规划和分析</p>
 ]]></content>
     </entry>
 </feed>
