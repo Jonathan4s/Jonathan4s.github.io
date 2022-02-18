@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Jonathan4s.github.io</id>
     <title>GreenOlive</title>
-    <updated>2022-02-18T03:19:23.857Z</updated>
+    <updated>2022-02-18T10:40:18.448Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Jonathan4s.github.io"/>
     <link rel="self" href="https://Jonathan4s.github.io/atom.xml"/>
@@ -17,12 +17,10 @@ The stock of knowledge in the past can only solve the problems of the present，
         <link href="https://Jonathan4s.github.io/post/gong-ying-lian-cheng-ben-fen-xi-jiang-ben-an-li/">
         </link>
         <updated>2022-02-18T02:30:28.000Z</updated>
-        <content type="html"><![CDATA[<aside>
-<pre><code>💝 大家好才是真的好
+        <content type="html"><![CDATA[<pre><code>💝 大家好才是真的好
 
 “降本增效”（该成本指 变动成本，即 供应链成本。）
 </code></pre>
-</aside>
 <h3 id="案例场景"><strong>案例场景</strong>：</h3>
 <blockquote>
 <p>某某汽车生产企业公司需要做上市规划，为了顺利上市，保证公司经营净利润大于30%，符合A股的上市的要求。该公司的原材料采购成本几乎为0，但是存货库存里是有实物材料的，而在财务报表上是没有体现的，库存是0，应付账款也是0。</p>
