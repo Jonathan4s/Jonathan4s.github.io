@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Jonathan4s.github.io</id>
     <title>GreenOlive</title>
-    <updated>2022-02-18T10:40:18.448Z</updated>
+    <updated>2022-03-02T01:38:44.139Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Jonathan4s.github.io"/>
     <link rel="self" href="https://Jonathan4s.github.io/atom.xml"/>
@@ -11,6 +11,19 @@ The stock of knowledge in the past can only solve the problems of the present，
     <logo>https://Jonathan4s.github.io/images/avatar.png</logo>
     <icon>https://Jonathan4s.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, GreenOlive</rights>
+    <entry>
+        <title type="html"><![CDATA[乱后宿南陵废寺寄沈明府]]></title>
+        <id>https://Jonathan4s.github.io/post/luan-hou-su-nan-ling-fei-si-ji-shen-ming-fu/</id>
+        <link href="https://Jonathan4s.github.io/post/luan-hou-su-nan-ling-fei-si-ji-shen-ming-fu/">
+        </link>
+        <updated>2022-03-02T01:33:30.000Z</updated>
+        <content type="html"><![CDATA[<p>唐 · 杜荀鹤</p>
+<p>只共寒灯坐到明，塞鸿冲雪一声声。</p>
+<p>乱时为客无人识，废寺吟诗有鬼惊。</p>
+<p>且把酒杯添志气，已将身事托公卿。</p>
+<p><strong>男儿仗剑酬恩在，未肯徒然过一生。</strong></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[供应链成本分析-降本案例]]></title>
         <id>https://Jonathan4s.github.io/post/gong-ying-lian-cheng-ben-fen-xi-jiang-ben-an-li/</id>
@@ -919,98 +932,6 @@ SAP Analytics Cloud可以很好地处理比率，但我们建议您将account ty
 每月的预测以大量工作为代价提供组织的脉搏；SAP Analytics Cloud大大简化了每月的工作，因此可以将更多的时间花在面向未来的活动上。</p>
 <figure data-type="image" tabindex="12"><img src="https://Jonathan4s.github.io/post-images/1617345912655.png" alt="" loading="lazy"></figure>
 <p>在下一节中，我们将介绍基于驱动的计划及其在预测和预算中的作用。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[3.利用SAP®Analytics Cloud引入财务规划和分析-预算]]></title>
-        <id>https://Jonathan4s.github.io/post/li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi-yu-suan/</id>
-        <link href="https://Jonathan4s.github.io/post/li-yong-sapranalytics-cloud-yin-ru-cai-wu-gui-hua-he-fen-xi-yu-suan/">
-        </link>
-        <updated>2021-04-02T05:40:59.000Z</updated>
-        <content type="html"><![CDATA[<p>一年一度的运作过程是FP&amp; A的基础，在每一个财政年度或日历年，每一个公司都会启动计划周期。</p>
-<p>预算通常是在比预测更高的层次上执行的，它使规划者能够专注于特定的活动和费用类别，从而使企业能够在健康的财务阈值内运营。这可以通过结合收入预期和宏观经济指标（如通货膨胀和商品价格）考虑历史趋势，使用基于驱动因素的假设汇总收入任务和费用，并分配费用来实现；或者，它可以作为一个零基础的过程来处理，在这个过程中，每个部门都必须按照预定义的指导方针来强制其年度支出。不同的行业遵循不同的方法。一种传统的预算编制方法采用混合方法，即遵循“自上而下”的方法作为计划的第一次修订，然后在以后从“自下而上”的方法进行相应调整。</p>
-<p>在开始预算过程之前，设定与公司战略目标和中短期目标相一致的目标是至关重要的。这使得规划者能够专注于已知的、经常重复的和可控的费用，以建立一个基线，然后按组织单位或部门分解或分配到每月活动、经常性流程、关键创新项目等，这些通常与本行动计划的执行有关。</p>
-<p>制定预算是一个高度协作和复杂的过程，参与者和利益相关者的范围从通常提供宏观指导的首席财务官到接受高级管理人员和分析师输入以制定计划的FP&amp;a部门负责人。除此之外，其他因素，如技术限制或复杂的IT环境，通常会导致预算编制过程延长，可能会持续几个月，直到最终版本完成，并且可能需要在批准前进行几轮反馈、修订和顶层或底层调整。</p>
-<p>传统预算面临一些共同的挑战：</p>
-<ul>
-<li>跟踪预算的不同版本和修订</li>
-<li>获取当前或前几年的历史数据（实际值），并将其与上次预算和预测版本进行比较，以确保团队跟踪设定的战略目标</li>
-<li>处理具有不同粒度级别的大量记录（实际值通常非常详细，并且在事务级别出现，而预算或预测将在更高级别创建和维护）</li>
-<li>在处理大量异构信息时，将计划、预算或实际和预测版本可视化并“分片”</li>
-<li>了解组织在预算周期的流程中所处的位置</li>
-<li>处理用户错误和不确定性</li>
-<li>以灵活的方式分解到较低的级别，以反映新的信息或对环境和市场变化作出反应</li>
-<li>从中央主数据系统或FP&amp;a可用的不同工具访问最新的组织结构和主数据，以获取建立其估算伙伴所需的信息（例如，交易数据，如需求量和价格表，或主数据，如成本中心，产品和客户层次结构、公司会计科目表等）</li>
-</ul>
-<p>今天，一些客户仍在脱机执行此过程（通常在Excel中）。然而，离线处理不仅进一步突出了这些问题，延长了完成计划所需的时间，而且还经常引入新问题，例如必须跟踪多个电子表格版本。集成来自外部来源的数据或键入容易导致用户错误的公式，并可能结转到新版本的预算中，这可能会导致计划过程中断。</p>
-<p>使用云应用程序（如SAP Analytics cloud）有助于通过启用以下功能来缓解这些挑战：</p>
-<ul>
-<li>中央存储库中的版本控制</li>
-<li>时间点恢复备份</li>
-<li>公共和私人版本，以鼓励合作，直到预算准备好与更广泛的组织共享</li>
-<li>所有主数据的中央存储库，用于构建、分析并将变更和指导纳入这些估算</li>
-<li>审核功能，以了解在萌芽过程中何时发生变化以及发生了什么变化</li>
-<li>数据锁定功能，确保预算定案后，不会擅自更改或修订</li>
-<li>安全层，以确保只有正确的人员才能访问正确级别的信息，以避免将敏感信息（例如，人员总数信息或战略计划）暴露给更广泛的用户组</li>
-<li>自动实现关闭月份并与预算和预测方案无缝集成的预测布局</li>
-<li>类似工作流的功能，允许通过输入任务提交数据以供批准，并提供可视化辅助工具，以便在预算周期内进行跟踪和问责</li>
-<li>可以从移动设备上访问的丰富的可视化效果远远超出了Excel或PowerPoint等工具所提供的功能，并且可以刷新，而不必每月构建或手动更新</li>
-</ul>
-<p>本节介绍在SAP Analytics Cloud中构建预算所执行的基本任务。在第2.1节，我们从预算的基础开始：播种和初始化。在第2.2节中，我们将向您概述建立在播种过程之上的业界领先做法，在第2.3节中，您将了解SAP Analytics Cloud的发布和协作功能，这些功能有助于构建预算的迭代过程。<br>
-最后，在第2.4节中，我们将讨论执行差异分析、利用增强分析的重要性，以及这对预算周期的影响。</p>
-<h2 id="21预算播种和初始化">2.1预算播种和初始化</h2>
-<p>在每个预算或预测周期开始时，第一步是“播种”或填充版本，作为生成预算的起点。这意味着有一个算法或过程来执行基线计算，以推动创建第一个预算版本；例如，价格×数量将产生一个估计的收入关键数字。组织的损益播种过程往往因行业而异。</p>
-<p>另一种常见的做法是，公司通过将上一年度的预算增加一个特定的百分比来增加预算，既可以达到战略目标作为起点，也可以反映宏观经济因素和市场状况。随着机器学习和预测算法的兴起，执行预算分配的新方法正在我们之前提到的传统方法之上或与之并行使用。这些先进的技术通常是根据先进的支出指标而不是历史的线性趋势来定义的。</p>
-<p>SAP Analytics Cloud可以通过用户友好的界面和直接的机器学习功能，帮助向FP&amp;A引入高级分析。它使用户能够使用会话人工智能（AI）将自然语言转化为可视化，并通过搜索来洞察事实。额外的开箱即用的预测功能提供基于算法的估计，如自动预测、三指数平滑和线性回归。</p>
-<p>如果需要一种更传统的方法，FP&amp;a分析师可以通过复制上一年的数据来手动播种。图2.1和图2.2显示了在SAP Analytics云中通过复制和粘贴前一年的数据来播种预算的过程，就像在传统的数据表中一样。此工作流根据上一年的分发自动分发顶级种子。</p>
-<figure data-type="image" tabindex="1"><img src="https://Jonathan4s.github.io/post-images/1617343358492.png" alt="" loading="lazy"></figure>
-<p>然后，财务规划师可以将种子估计值增加给定的百分比，如图2.3中的10%所示。结果如图2.4所示：2018财年5247031.90美元。我们可以使用历史数据作为分配的基础，从自上而下的角度来观察分类是如何工作的。</p>
-<figure data-type="image" tabindex="2"><img src="https://Jonathan4s.github.io/post-images/1617343468300.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="3"><img src="https://Jonathan4s.github.io/post-images/1617343491753.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="4"><img src="https://Jonathan4s.github.io/post-images/1617343511422.png" alt="" loading="lazy"></figure>
-<h2 id="22预算录入">2.2预算录入</h2>
-<p>在预算已经确定之后，下一步就是进入预算。<br>
-对于许多组织来说，这是一项具有挑战性的任务。公司在努力管理离线电子表格的同时，也在试图对数据获取过程进行控制。提高透明度，确保审计师能够获得详细的交易级信息，对于大多数上市公司来说至关重要。使用电子表格可能会导致代价高昂的错误，因为个人贡献者在没有多少指导的情况下在不同级别手动输入数据。<br>
-SAP Analytics Cloud可以帮助用户避免一些常见的痛点。在本节中，我们将讨论一些关键的SAP Analytics云功能，以简化预算流程，最大限度地减少填写预算表单时出错的机会。</p>
-<h3 id="预算分解">预算分解</h3>
-<p>在更高级别输入数据后，预算分解允许财务用户在给定的数据交集中逐级增加或减少特定金额。这个非常强大的工具允许用户在几分钟内进行大规模调整；因此，它使上层管理层能够灵活地请求顶层调整，这将影响多个产品线或部门，而无需等待数天或数周才能看到结果，也无需完全修改预算。能够实时查看和分析这些下游影响的财务团队也可以在几分钟内测试假设并验证假设。</p>
-<p>SAP Analytics Cloud使计划人员能够轻松地执行自顶向下的分发。诸如单元锁定、扩展、趋势和权重、客户分配过程和数据操作等功能可以使分解过程变得轻松。您还可以输入多个记录，而无需等待SAP Analytics Cloud使用海量数据输入功能处理所有记录。</p>
-<p>在图2.5中，SAP Analytics Cloud的单元锁定功能阻止了一些单元进行输入；因此，毛利、总销售额和已售出商品成本单元被标记为灰色。当您在可供输入的单元格中输入金额（例如，营业收入）时，分解将启动并分配到以独占方式解锁的单元格。图2.6显示了SAP Analytics云网格中分解功能的输出。<br>
-通过在SAP Analytics Cloud中执行分解功能，FP&amp;A用户可以跨多个业务维度（如成本中心、账户、客户和销售渠道）实时分析这些分配的影响。结果是花费更少的时间来分析如何建立计算，花费更多的时间来查看数据和做出决策，以降低成本，提高利润率，更好地分配或花费预算。</p>
-<figure data-type="image" tabindex="5"><img src="https://Jonathan4s.github.io/post-images/1617343546750.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="6"><img src="https://Jonathan4s.github.io/post-images/1617343562819.png" alt="" loading="lazy"></figure>
-<h3 id="预算协同编辑">预算协同编辑</h3>
-<p>预算编制是一个高度迭代的过程，需要来自不同方面的大量协作和参与。要完成和完成bud  get entry流程，财务从业者需要共享和编辑预算的多个版本，合并它们，并维护版本控制步骤，这些步骤可以在SAP Analytics Cloud的帮助下轻松实现。<br>
-请记住，SAP Analytics Cloud使计划人员能够创建预算或战略计划的私有版本，该版本可以作为在制品（WIP）草稿，并与其他个人或部门共享。这个私有版本可以多次修改，直到最终可以作为最终预算版本发布。图2.7显示了为协作目的而创建调整后预算的私有版本（Budget_V1）。</p>
-<figure data-type="image" tabindex="7"><img src="https://Jonathan4s.github.io/post-images/1617343578916.png" alt="" loading="lazy"></figure>
-<p>如图2.8和图2.9所示，管理人员还可以利用任务列表来跟踪输入的金额和创建或修改的时间，按组织区域控制谁输入信息，以及发送提醒。除此之外，任务列表还允许经理批准、修改或拒绝特定条目。这个强大的工具使财务团队能够控制他们的计划周期，从而更好地管理和减少创建预算所需的时间。<br>
-SAP Analytics Cloud还允许金融用户运行货币换算。<br>
-这意味着来自不同地区和国家的规划者可以用他们的交易货币记录他们的支出和收入，交易货币使用平均汇率、历史汇率或公司汇率换算成公司货币。</p>
-<figure data-type="image" tabindex="8"><img src="https://Jonathan4s.github.io/post-images/1617343593011.png" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="9"><img src="https://Jonathan4s.github.io/post-images/1617343609293.png" alt="" loading="lazy"></figure>
-<h2 id="23预算发布">2.3预算发布</h2>
-<p>传统的报告过程通常不一致、繁琐且耗时，它们通常需要自定义适配器和集成开发来从外部源引入数据、将数据导出到离线工具（如Excel）或生成PDF。</p>
-<p>然而，SAP Analytics Cloud不仅允许用户通过强大而漂亮的故事来消费财务信息，而且还利用这些相同的表单和报表来执行计划功能，例如分解和假设场景建模。从一个故事中，分析师可以设置差异或公式，深入到详细信息中，设置阈值和启动计算，而无需离开SAP Analytics云界面或创建新故事。</p>
-<p>看看图2.10的顶部。在这里，您可以看到SAP Analytics Cloud如何让用户使用单元格引用（在本例中为B2–C2）构建公式。<br>
-这使得用户能够轻松地将他们的Excel技能转化为SAP Analytics Cloud，以构建强大的差异分析。</p>
-<figure data-type="image" tabindex="10"><img src="https://Jonathan4s.github.io/post-images/1617343633970.png" alt="" loading="lazy"></figure>
-<p>预算和年度经营计划完成并准备批准后，需要进行分析、调整、对照历史数据和分发。</p>
-<p>用户在SAP Analytics Cloud中有多种调整预算的选项。<br>
-最常见的方法是利用一个故事以损益表格式显示计划，可以按部门进一步细分。故事可以从桌面客户端消费，也可以从移动设备消费，如iOS设备的图2.11所示。</p>
-<figure data-type="image" tabindex="11"><img src="https://Jonathan4s.github.io/post-images/1617343648828.png" alt="" loading="lazy"></figure>
-<p>故事之所以强大，是因为它消除了创建每月都需要修改的PowerPoint幻灯片的需要。可以创建一个故事，其特定目的是提交给C-suite、指导委员会或董事会；然后可以在笔记本电脑屏幕上或使用SAP Digital Boardroom自动刷新和使用该故事。例如，图2.12中的数字会议室提供了零售组织回报率的实时分析。</p>
-<figure data-type="image" tabindex="12"><img src="https://Jonathan4s.github.io/post-images/1617343661472.png" alt="" loading="lazy"></figure>
-<p>对于仍希望通过Excel使用预算或计划的用户，SAP Analysis For Microsoft Office和SAP Analytics Cloud之间存在本机集成。可以设置从SAP Analysis for Mic  rosoft Office到特定模型的连接。然后，用户可以直接利用Excel中的一部分计划功能，同时还可以使用其他功能，如透视表和Excel表格（如VLOOKUPs）。</p>
-<p>另一个重要的分发功能是将故事导出为PDF。SAP Analytics Cloud允许用户创建强大的可视化效果，这些效果可以在市场上共享（例如，作为投资者套餐的一部分），也可以在其他方面共享，而无需返工或使用其他工具来格式化报告。</p>
-<p>SAP Analytics Cloud与SAP s/4HANA和SAP BPC的双向集成使财务团队能够收回计划并将其预测到SAP s/4HANA中。用户可以使用Universal Journal（表ACDOCU）中SAP S/4HANA中的组报告工具整合预测、预算或计划，或将其写回SAP BPC模型中，以便加以利用并集成到现有环境中，如图2.13所示。这可以很容易地按需或按计划实现。</p>
-<figure data-type="image" tabindex="13"><img src="https://Jonathan4s.github.io/post-images/1617343675550.png" alt="" loading="lazy"></figure>
-<h2 id="24方差分析">2.4方差分析</h2>
-<p>差异分析解释了企业是如何实现（或偏离）其目标的。<br>
-差异可以说明一个故事，可能隐藏在其他因素背后，如季节性、一次性和收购。此外，执行变量分析对于企业了解其业务变量之间的任何相关性至关重要。跟踪你的行为和预算之间的这些变化可以作为一种控制机制，增加责任感，并提供在线分析来剖析财务决策。它也可以指向一个低效的预算和预测过程。</p>
-<p>用户可以配置阈值，进一步增强故事的分析能力，一目了然。这有助于决策者关注需要关注的领域。SAP Analytics Cloud使创建差异分析和深入了解细节变得非常容易，如图2.14所示。其他类型的差异分析（例如，数量、价格和混合差异分析）也可以通过利用计算度量、故事中公式的单元格引用、高级脚本或帐户公式轻松配置。将这些工具交给财务团队使用，SAP Analytics Cloud是一个非常强大和灵活的解决方案，可以满足不同复杂程度的业务需求。</p>
-<figure data-type="image" tabindex="14"><img src="https://Jonathan4s.github.io/post-images/1617343690623.png" alt="" loading="lazy"></figure>
-<p>在本节中，我们解释了SAP Analytics Cloud如何使财务团队掌握预算周期。加速这一传统的缓慢进程是一项复杂的挑战，技术本身无法解决，但要为其建立坚实的基础，重新设计业务流程，并将其与正确的特征集配对，可以极大地提高整体用户体验。SAP Analytics Cloud使访问信息、协作和快速迭代成为可能，它可以节省成熟公司在准备和监控其财务目标方面的大量精力。<br>
-在下一节中，我们将探讨预测。我们将更深入地了解bot-tom-up流程，并考虑SAP Analytics Cloud如何提供帮助工具。</p>
 ]]></content>
     </entry>
 </feed>
